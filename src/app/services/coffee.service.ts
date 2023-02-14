@@ -18,7 +18,7 @@ export class CoffeeService {
   constructor(private httpClient: HttpClient) {}
 
   getCoffees() {
-    return this.httpClient.get<Coffee[]>("https://random-data-api.com/api/coffee/random_coffee?size=30")
+    return this.httpClient.get<Coffee[]>("https://random-data-api.com/api/coffee/random_coffee?size=50")
       .pipe(map(response => {
         response.forEach((coffee) => {
           coffee.imagePath = this.images[Math.floor(Math.random() * this.images.length)]
