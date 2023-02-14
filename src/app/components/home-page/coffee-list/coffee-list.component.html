@@ -1,0 +1,18 @@
+<div *ngIf="coffeeList" class="container">
+  <div class="row">
+    <app-coffee-item
+      *ngFor="let element of coffeeList"
+      [coffee]="element"></app-coffee-item>
+  </div>
+</div>
+
+
+<img  *ngIf="!coffeeList" src="https://1000logos.net/wp-content/uploads/2016/12/Starbucks-Logo.png"
+      style="position: fixed;
+     top: 50%;
+     left: 50%;
+     margin-top: -50px;
+     margin-left: -50px;
+     width: 100px;
+     height: 80px;">
+
