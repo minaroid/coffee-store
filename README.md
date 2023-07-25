@@ -9,5 +9,4 @@ A Simple Angular Demo for listing mocked data from https://random-data-api.com
 
 ## Install (DOCKER)
 
-- run `docker run -d -p 80:80 minaroid/coffee-store` 
-
+- run `docker run -d -p 80:80 minaroid/coffee-store`
